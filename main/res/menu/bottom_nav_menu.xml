@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/navigation_assistant"
+        android:icon="@drawable/ic_assistant_black_24dp"
+        android:title="@string/title_assistant" />
+
+    <item
+        android:id="@+id/navigation_statistics"
+        android:icon="@drawable/ic_statistics_black_24dp"
+        android:title="@string/title_statistics" />
+
+    <item
+        android:id="@+id/navigation_community"
+        android:icon="@drawable/ic_community_black_24dp"
+        android:title="@string/title_community" />
+
+    <item
+        android:id="@+id/navigation_config"
+        android:icon="@drawable/ic_config_black"
+        android:title="@string/title_config" />
+
+</menu>

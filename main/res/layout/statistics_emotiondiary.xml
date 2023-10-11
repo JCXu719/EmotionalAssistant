@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/statistics_emotionDiary_tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1997/12/22"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"></TextView>
+
+    <TextView
+        android:id="@+id/statistics_emotionDiary_tvWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rainy"
+        app:layout_constraintLeft_toRightOf="@id/statistics_emotionDiary_tvDate"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"></TextView>
+
+    <TextView
+        android:id="@+id/statistics_emotionDiary_tvEmotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="happy"
+        app:layout_constraintLeft_toRightOf="@id/statistics_emotionDiary_tvWeather"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"></TextView>
+
+    <ImageView
+        android:id="@+id/statistics_emotionDiary_ivEmoji"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/happy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/statistics_emotionDiary_tvContent"
+        android:layout_width="360dp"
+        android:layout_height="250dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_ivEmoji"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="11111111111111111\n1111111111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/statistics_emotionDiary_ivStars"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_tvContent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/stars"></ImageView>
+
+    <TextView
+        android:id="@+id/statistics_emotionDiary_tvStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_tvContent"
+        app:layout_constraintRight_toLeftOf="@id/statistics_emotionDiary_ivStars"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:text="11"></TextView>
+
+    <ImageView
+        android:id="@+id/statistics_emotionDiary_ivLikes"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_tvContent"
+        app:layout_constraintRight_toLeftOf="@id/statistics_emotionDiary_tvStars"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/likes"></ImageView>
+
+    <TextView
+        android:id="@+id/statistics_emotionDiary_tvLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_tvContent"
+        app:layout_constraintRight_toLeftOf="@id/statistics_emotionDiary_ivLikes"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:text="18"></TextView>
+
+    <ImageView
+        android:id="@+id/statistics_emotionDiary_ivComments"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_tvContent"
+        app:layout_constraintRight_toLeftOf="@id/statistics_emotionDiary_tvLikes"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/comment"></ImageView>
+
+    <TextView
+        android:id="@+id/statistics_emotionDiary_tvComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_tvContent"
+        app:layout_constraintRight_toLeftOf="@id/statistics_emotionDiary_ivComments"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:text="18"></TextView>
+
+    <ImageView
+        android:id="@+id/statistics_emotionDiary_shareBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_tvContent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/share"></ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

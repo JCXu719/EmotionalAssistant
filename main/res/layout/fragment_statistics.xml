@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 滑动界面 -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/statistics_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 助手信息区域 -->
+        <LinearLayout
+            android:id="@+id/statistics_assistantInfoGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/statistics_emotionChartGroup"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/statistics_assistantInfo_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_assistant_slime"
+                ></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="助手名称"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="助手等级"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- 心情数据统计区域 -->
+        <LinearLayout
+            android:id="@+id/statistics_emotionChartGroup"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/statistics_assistantInfoGroup">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/statistics_emotionChart_hintTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:text="近日心情数据统计"
+                    android:layout_weight="1"
+                    ></TextView>
+
+                <Button
+                    android:id="@+id/statistics_emotionData_moreInfoBtn"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    style="@style/Statistics_BtnStyle"
+                    android:text="more"></Button>
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/statisticsborders_shape"></com.github.mikephil.charting.charts.LineChart>
+
+        </LinearLayout>
+
+        <!-- 小贴士区域-->
+        <LinearLayout
+            android:id="@+id/statistics_emotionTipsGroup"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/statistics_assistantInfoGroup"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/statistics_emotionTips_hintTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日小贴士"
+                    android:layout_weight="1"></TextView>
+
+                <Button
+                    android:id="@+id/statistics_emotionTips_moreInfoBtn"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    style="@style/Statistics_BtnStyle"
+                    android:text="more"></Button>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="\n\n今天也要保持好心情哦"
+                android:textAlignment="center"
+                android:background="@drawable/statisticsborders_shape"
+                ></TextView>
+
+        </LinearLayout>
+
+        <!-- 情感日记部分 -->
+        <LinearLayout
+            android:id="@+id/statistics_emotionDiaryGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/statistics_emotionChartGroup"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感日记"
+                    android:layout_weight="1"></TextView>
+
+                <Button
+                    android:id="@+id/statistics_emotionDiary_moreInfoBtn"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    style="@style/Statistics_BtnStyle"
+                    android:text="more"></Button>
+
+            </LinearLayout>
+
+            <!-- 动态添加日记，最多5个，其他的点击more选项后切换其他页面继续查看-->
+            <include
+                android:id="@+id/statistics_emotionDiary_preview"
+                layout="@layout/statistics_emotiondiarylist"
+                ></include>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

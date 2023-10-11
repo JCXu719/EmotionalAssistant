@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 该文档用于存放Config中PreferencesScreen中相关的数据 -->
+<resources>
+    <!-- 隐私设置-所收集的数据的类型 -->
+    <string-array name="gatheringTypes">
+        <item name="image">图像</item>
+        <item name="video">视频</item>
+        <item name="text">文本</item>
+        <item name="audio">语音</item>
+    </string-array>
+
+    <string-array name="gatheringTypesValues">
+        <item name="image">image_permission</item>
+        <item name="video">video_permission</item>
+        <item name="text">text_permission</item>
+        <item name="audio">audio_permission</item>
+    </string-array>
+
+    <!-- 隐私设置-数据收集方式 -->
+    <string-array name="gatheringMethods">
+        <item name="autoLaunch">自启动</item>
+        <item name="backgroundCollect">后台收集数据</item>
+        <item name="collectInUse">使用当前软件时收集</item>
+    </string-array>
+
+    <string-array name="gatheringMethodsValues">
+        <item name="autoLaunch">autoLaunch</item>
+        <item name="backgroundCollect">backgroundCollect</item>
+        <item name="collectInUse">collectInUse</item>
+    </string-array>
+
+</resources>

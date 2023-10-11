@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.assistant.AssistantFragment">
+
+    <Button
+        android:id="@+id/assistant_captureTalk_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_assistantbtns_shape"
+        android:text="情感识别/对话"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        ></Button>
+
+    <Button
+        android:id="@+id/assistant_writingDiary_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_assistantbtns_shape"
+        android:text="情感日记"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        ></Button>
+
+    <Button
+        android:id="@+id/assistant_switchScenes_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_assistantbtns_shape"
+        android:text="切换场景"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        ></Button>
+
+    <Button
+        android:id="@+id/assistant_moreFunctions_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_assistantbtns_shape"
+        android:text="更多功能"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        ></Button>
+
+    <ImageView
+        android:id="@+id/assistant_imgView"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/assistant_captureTalk_btn"
+        app:layout_constraintBottom_toTopOf="@id/assistant_switchScenes_btn"
+        android:src="@drawable/ic_assistant_slime"
+        ></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

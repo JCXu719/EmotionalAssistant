@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 通知权限 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- 相机权限 -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"></uses-feature>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- Application -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EmotionalAssistant"
+        tools:targetApi="31">
+
+        <!-- 服务：音乐 -->
+        <service
+            android:name=".services.MusicService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <!-- 通知 -->
+        <activity
+            android:name=".notifications.tempNotification"
+            android:exported="true" />
+
+        <!-- 其他 Activities -->
+        <activity android:name=".ui.assistant.AssistantSentimentAnalysis"
+            android:exported="true"></activity>
+
+        <activity android:name=".ui.assistant.AssistantMoreFunctions"
+            android:exported="true"></activity>
+
+        <activity android:name=".ui.assistant.AssistantTextClassification"
+            android:exported="true"></activity>
+
+        <activity android:name=".ui.statistics.EmotionDiaryDisplayPage"
+            android:exported="true"></activity>
+
+        <activity android:name=".ui.statistics.EditEmotionDiaryPage"
+            android:exported="true"></activity>
+
+        <activity android:name=".ui.statistics.DailyTipsPage"
+            android:exported="true"></activity>
+
+        <activity android:name=".ui.statistics.EmotionDataPage"
+            android:exported="true"></activity>
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

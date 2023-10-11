@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/statistics_emotionDiary_editDiary_editHint"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/green_blue"
+        android:textSize="28sp"
+        android:layout_marginTop="40dp"
+        android:text="记录你的每日心情！"></TextView>
+
+    <LinearLayout
+        android:id="@+id/statistics_emotionDiary_editDiary_basicInfoLinearLayout"
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_editDiary_editHint"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/statistics_emotionDiary_editDiary_etDate"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:hint="Date"
+            android:gravity="center"></EditText>
+
+        <EditText
+            android:id="@+id/statistics_emotionDiary_editDiary_etWeather"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:hint="Weather"
+            android:gravity="center"></EditText>
+
+        <EditText
+            android:id="@+id/statistics_emotionDiary_editDiary_etEmotion"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:hint="Emotion"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:gravity="center"></EditText>
+
+    </LinearLayout>
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_editDiary_basicInfoLinearLayout"
+        android:id="@+id/statistics_emotionDiary_editDiary_etContent"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:hint=" Edit the content here..."
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textMultiLine"
+        android:minLines="10"
+        android:maxLines="30"
+        android:scrollbars="vertical"
+        android:gravity="top"
+        android:enabled="true"
+        android:background="@null"></EditText>
+
+    <Button
+        android:id="@+id/statistics_emotionDiary_editDiary_clearBtn"
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_editDiary_etContent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清空"></Button>
+
+    <Button
+        android:id="@+id/statistics_emotionDiary_editDiary_submitBtn"
+        app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_editDiary_etContent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

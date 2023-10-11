@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="preference_general"
+        android:title="通用设置">
+
+        <SwitchPreference
+            android:key="preference_bgm"
+            android:title="背景音乐"
+            android:summary="开启背景音乐"
+            ></SwitchPreference>
+
+        <SwitchPreference
+            android:key="preference_soundEffects"
+            android:title="音效"
+            android:summary="开启点击音效"></SwitchPreference>
+
+        <SwitchPreference
+            android:key="preference_notification"
+            android:title="通知"
+            android:summary="开启后台通知"></SwitchPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="preference_privateInfo"
+        android:title="隐私设置">
+
+        <MultiSelectListPreference
+            android:key="preference_gatheringTypes"
+            android:title="所收集的数据的类型"
+            android:summary="设置收集的多模态数据类型"
+            android:entries="@array/gatheringTypes"
+            android:entryValues="@array/gatheringTypesValues"></MultiSelectListPreference>
+
+        <MultiSelectListPreference
+            android:key="preference_gatheringMethods"
+            android:title="数据收集方式"
+            android:summary="设置多模态数据收集方式"
+            android:entries="@array/gatheringMethods"
+            android:entryValues="@array/gatheringMethodsValues"></MultiSelectListPreference>
+
+        <SwitchPreference
+            android:key="preference_thirdPartyData"
+            android:title="第三方软件数据收集"
+            android:summary="允许从第三方软件收集用户数据"></SwitchPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="preference_permission"
+        android:title="权限设置">
+
+    </PreferenceCategory>
+</PreferenceScreen>

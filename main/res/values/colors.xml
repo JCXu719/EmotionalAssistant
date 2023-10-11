@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 可用的颜色 -->
+    <color name="green_darklight">#19CAAD</color>
+    <color name="green_dark">#8CC7B5</color>
+    <color name="green_lightblue">#A0EEE1</color>
+    <color name="green_blue">#BEE7E9</color>
+    <color name="green_light">#BEEDC7</color>
+    <color name="yellow_light">#D6D5B7</color>
+    <color name="yellow_dark">#D1BA74</color>
+    <color name="yellow_red">#E6CEAC</color>
+    <color name="pink">#ECAD9E</color>
+    <color name="pink_red">#F4606C</color>
+
+</resources>
