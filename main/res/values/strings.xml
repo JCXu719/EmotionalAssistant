@@ -1,23 +1,139 @@
 <resources>
-    <string name="app_name">EmotionalAssistant</string>
-    <string name="title_assistant">Assistant</string>
-    <string name="title_statistics">Statistics</string>
-    <string name="title_community">Community</string>
-    <string name="title_config">Config</string>
-    <string name="statistics_emotionDiary_sample">
-        Date Weather Emotion\n
-                content\n\n\n\n\n
-        Share(icons) likes 98 stars 27
-    </string>
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome!"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+	<string name="app_name">EmotionalAssistant</string>
+	<string name="title_assistant">Assistant</string>
+	<string name="title_statistics">Statistics</string>
+	<string name="title_community">Community</string>
+	<string name="title_config">Config</string>
+	<string name="statistics_emotionDiary_sample">
+		Date Weather Emotion\n
+		content\n\n\n\n\n
+		Share(icons) likes 98 stars 27
+	</string>
+	<!-- Strings related to login -->
+	<string name="prompt_email">Email</string>
+	<string name="prompt_password">Password</string>
+	<string name="action_sign_in">Sign in or register</string>
+	<string name="action_sign_in_short">Sign in</string>
+	<string name="welcome">"Welcome!"</string>
+	<string name="invalid_username">Not a valid username</string>
+	<string name="invalid_password">Password must be >5 characters</string>
+	<string name="login_failed">"Login failed"</string>
 
-    <!-- 助手对话-->
+	<!-- 助手对话-->
+	<!--assistant-->
+
+	<!--joy_80_100-->
+	<string name="assistant_80_100_joy_1">主人，太棒了，看到你这么开心真是太好了！希望你每天都可以这么开心！</string>
+	<string name="assistant_80_100_joy_2">主人，快乐的心情是会传染的，看到你这么开心，我的心情也跟着愉悦起来！</string>
+	<string name="assistant_80_100_joy_3">主人，尽情享受这一刻的喜悦吧，生活中的快乐时刻总是让人心情愉悦的！</string>
+	<!--joy_10_80-->
+	<string name="assistant_10_80_joy_1">主人，看来你经历一些愉快的瞬间，给我分享一下吧！</string>
+	<string name="assistant_10_80_joy_2">主人，快乐的心情总是让生活更美好，请问你正在感受到它的魅力吗？</string>
+	<string name="assistant_10_80_joy_3">主人，有一些快乐的事情正在你的生活中发生，我由衷地为你感到开心和高兴</string>
+	<!--surprise_80_100-->
+	<string name="assistant_80_100_surprise_1">主人，看来你刚刚经历了一场令人兴奋的惊喜呀！</string>
+	<string name="assistant_80_100_surprise_2">主人，很高兴看到你有这么大的惊喜，我相信这一刻一定很特别吧！</string>
+	<string name="assistant_80_100_surprise_3">主人，想象一下这个令人惊喜的时刻，真是美好的体验！</string>
+	<!--surprise_10_80-->
+	<string name="assistant_10_80_surprise_1">主人，令人惊喜的感觉总是让生活更精彩，请继续享受吧！</string>
+	<string name="assistant_10_80_surprise_2">哎呀，主人，我都被你的惊喜情感感染了！</string>
+	<string name="assistant_10_80_surprise_3">哇！真的吗？主人，这太令人惊讶了！可以告诉我更多细节吗？我很想听听。</string>
+	<!--neutral_0_10-->
+	<string name="assistant_0_10_neutral_1">主人，你的感受我理解，请问有什么我可以为您做的吗？</string>
+	<string name="assistant_0_10_neutral_2">主人，请问有什么我可以帮助您的吗？</string>
+	<string name="assistant_0_10_neutral_3">主人，如果您想聊点什么的话，我随时都在这里哦！</string>
+	<!--neutral_(-10)_0-->
+	<string name="assistant_(-10)_0_neutral_1">主人，看来今天您的状态有点不好，没关系，我会一直在这里陪着你的，请问有什么我可以帮助您的吗？</string>
+	<string name="assistant_(-10)_0_neutral_2">主人，情绪低落的时候不必独自面对哦！我会一直在这陪着您，跟您一起面对的</string>
+	<string name="assistant_(-10)_0_neutral_3">主人，如果你想聊点什么，或者有什么可以让您心情稍微好一点的事情，都可以告诉我哦，我会一直在这里倾听的！</string>
+	<!--sadness_(-80)_(-10)-->
+	<string name="assistant_(-80)_(-10)_sadness_1">主人，我知道这是一个令人难过的时刻，不过您可以不必把这件事憋在心里，您可以跟我分享呀！</string>
+	<string name="assistant_(-80)_(-10)_sadness_2">主人，情感低谷时，与人分享是一种很好的排遣方式。您有任何难过的情绪都可以跟我分享哦，我随时都在呀！</string>
+	<string name="assistant_(-80)_(-10)_sadness_3">主人，我非常理解你现在的感受，如果你需要一个倾听者的话，我会一直在这里陪着你哦！你有任何不愉快的事情都可以跟我分享呀！</string>
+	<!--sadness_(-100)_(-80)-->
+	<string name="assistant_(-100)_(-80)_sadness_1">主人，真的很抱歉看到你如此难过，我想这一定是非常艰难的时刻吧，如果您愿意的话，我会一直在这里陪着你哦！</string>
+	<string name="assistant_(-100)_(-80)_sadness_2">主人，您感到如此难过我是非常理解的，我非常愿意倾听您的感受，为您提供一个安全的空间来分享。如果您愿意的话，我将陪伴你度过这一难熬的时刻！</string>
+	<string name="assistant_(-100)_(-80)_sadness_3">主人，我理解这可能是一段非常困难的时光。但无论您想聊什么，我都会在这里倾听，对您不离不弃！</string>
+	<!--disgust_(-80)_(-10)-->
+	<string name="assistant_(-80)_(-10)_disgust_1">主人，情感的波动是很正常的一件事，不管您现在感到有多么反感，我都愿意聆听和理解。您可以告诉我更多关于你感到反感的情况吗？</string>
+	<string name="assistant_(-80)_(-10)_disgust_2">主人，我知道感到反感是非常令人困扰的情感，但请您知道您不必独自面对。我将在这里一直陪着您，我们也可以一起聊一下，只要你愿意的话！</string>
+	<string name="assistant_(-80)_(-10)_disgust_3">主人，请您记住，自己的开心快乐是最重要的，无论您现在感到有多么反感，我都会始终尊重您的感受并为您提供支持</string>
+	<!--disgust_(-100)_(-80)-->
+	<string name="assistant_(-100)_(-80)_disgust_1">主人，我知道现在您的内心一定感到非常不满，但你不要一个人面对，您可以随时与我分享你的情感哦，只要您想，我随时都在的哦！</string>
+	<string name="assistant_(-100)_(-80)_disgust_2">主人，厌恶是一种很自然的情感，我们每个人在生活中都会遇到令人不快的事情，适当的转移一下注意力可以很好的帮助我们缓解情绪哦！</string>
+	<string name="assistant_(-100)_(-80)_disgust_3">主人，请您记住，您的感受永远是最重要的，如果你需要找人倾诉，我会一直在这里支持并陪着哦！</string>
+	<!--fear_(-80)_(-10)-->
+	<string name="assistant_(-80)_(-10)_fear_1">主人，我知道您现在感到害怕，但您不必过于担心，我会在这里一直陪着您的！</string>
+	<string name="assistant_(-80)_(-10)_fear_2">主人，害怕是生活中非常正常的情感，我们每个人都会经历，但您不必孤独面对，您的背后一直有我！</string>
+	<string name="assistant_(-80)_(-10)_fear_3">主人，如果您需要安慰或者有什么可以帮助您减轻恐惧的事情，请告诉我。我将一直在这里支持你，不离不弃！</string>
+	<!--fear_(-100)_(-80)-->
+	<string name="assistant_(-100)_(-80)_fear_1">主人，这种强烈的恐惧感很可能令您感到不安，但您不必独自一人面对它。我将在这里一直陪伴你哦！</string>
+	<string name="assistant_(-100)_(-80)_fear_2">主人，我知道这是一个非常可怕的时刻，但请您知道您并不是孤立无援的，您的背后有很多朋友，亲人，还有我哦！</string>
+	<string name="assistant_(-100)_(-80)_fear_3">主人，不管你害怕什么，都没有问题。只要您需要，我会一直在这里为你提供支持和鼓励，知道您走出恐惧！</string>
+	<!--anger_(-80)_(-10)-->
+	<string name="assistant_(-80)_(-10)_anger_1">主人，感到愤怒时，谈一下可以帮助释放情绪。您有什么不满的可以尽情对我倾诉，我将一直在这里倾听。</string>
+	<string name="assistant_(-80)_(-10)_anger_2">主人，不管是什么让您感到生气，你都可以与我分享。我会一直在这里为你提供支持和理解。</string>
+	<string name="assistant_(-80)_(-10)_anger_3">主人，感到愤怒时，去大自然宣泄是一种非常好的方法！请找一个无人的地方，将您心中的不满都宣泄出来吧！</string>
+	<!--anger_(-100)_(-80)-->
+	<string name="assistant_(-100)_(-80)_anger_1">主人，这种极度的愤怒情绪可能令人困扰，但您不必独自面对。我将一直在这里为你提供支持和理解。</string>
+	<string name="assistant_(-100)_(-80)_anger_2">主人，这种极强烈的愤怒情绪可能很难应对，但您不必孤立无援。因为我会一直在这里陪伴你哦。</string>
+	<string name="assistant_(-100)_(-80)_anger_3">主人，请您记住，你自身的情感是最重要的，无论愤怒有多强烈，我都会尊重您的情感，为您提供支持，一同渡过这段困难时期的！</string>
+
+	<!--tip-->
+	<!--joy_80_100-->
+	<string name="tip_80_100_joy_1">主人，既然您感到如此快乐，不妨尝试与亲朋好友分享这份喜悦，一同创造美好的回忆吧！</string>
+	<string name="tip_80_100_joy_2">主人，快乐有助于提高创造力和解决问题的能力，所以在这个状态下，您可以尝试解决一些挑战性的任务哦！</string>
+	<string name="tip_80_100_joy_3">主人，不要忘记记录下这个快乐的时刻哦，无论是通过文字、照片还是日记，这样您就可以随时回顾和重温这份快乐了！</string>
+	<!--joy_10_80-->
+	<string name="tip_10_80_joy_1">主人，快乐是一种能量源，用这份能量去追求你的梦想和目标。制定计划，努力实现它们，让快乐激发你的动力吧！</string>
+	<string name="tip_10_80_joy_2">主人，快乐是一种短暂的礼物，请珍惜当下的喜悦，并让它成为您每天的动力哦！</string>
+	<string name="tip_10_80_joy_3">主人，将快乐传递给他人，善良的行为和慷慨的举动会让您和周围的人都感到更快乐哦！</string>
+	<!--surprise_80_100-->
+	<string name="tip_80_100_surprise_1">主人，和别人分享您的惊喜，不仅会加倍快乐，还会帮助传播快乐给他人。与家人和朋友分享您的喜悦，共同庆祝生活中的奇迹吧。</string>
+	<string name="tip_80_100_surprise_2">主人，请享受这份令人惊喜的快乐！尝试探索新的体验和机会，它们可能会给您带来更多惊喜哦。</string>
+	<string name="tip_80_100_surprise_3">主人，利用惊喜的时刻，鼓励自己去挑战一些新的目标和机会。您已经展示出接受新事物的勇气，请继续前进吧！</string>
+	<!--surprise_10_80-->
+	<string name="tip_10_80_surprise_1">主人，请不断保持您的好奇心，积极地去探索未知领域，这样你可能会发现更多惊喜哦。</string>
+	<string name="tip_10_80_surprise_2">主人，在感受惊喜的时刻也可以从中学习，它们可以帮助您更好地适应变化，培养和锻炼您的适应能力哦。</string>
+	<string name="tip_10_80_surprise_3">主人，将您感受到的惊喜用积极的方式传递给他人，这不仅会增加您的快乐，还会让您成为一个更加积极的人哦。</string>
+	<!--neutral_0_10-->
+	<string name="tip_0_10_neutral_1">主人，在心情平静时，去寻找一些新的兴趣爱好或活动，它们可以帮助您充实生活，增加乐趣和满足感哦！</string>
+	<string name="tip_0_10_neutral_2">主人，请尝试定期锻炼，运动可以帮助您提高身体健康，同时有助于提升您的情绪和心情哦！</string>
+	<string name="tip_0_10_neutral_3">主人，请保持社交联系，多与朋友和家人互动，分享和交流可以提升您的情感和幸福感！</string>
+	<!--neutral_(-10)_10-->
+	<string name="tip_(-10)_0_neutral_1">主人，请尽量保持积极的思维，专注于你生活中的积极方面，这有助于提升您的情感和心情哦！</string>
+	<string name="tip_(-10)_0_neutral_2">主人，请不断尝试新的事物或体验，因为新奇的经历可能会激发你的兴趣和激情哦，让您做事情更有动力呀！</string>
+	<string name="tip_(-10)_0_neutral_3">主人，请常思考您的兴趣爱好和目标，这可能会帮助您找到新的动力和激情哦！</string>
+	<!--sadness_(-80)_(-10)-->
+	<string name="tip_(-80)_(-10)_sadness_1">主人，允许自己感受悲伤，它是非常正常的情感，请不要压抑它，让情感得以释放吧！</string>
+	<string name="tip_(-80)_(-10)_sadness_2">主人，这个时候您可以尝试一下慢慢吸气和呼气，它可以缓解您的悲伤哦！</string>
+	<string name="tip_(-80)_(-10)_sadness_3">主人，去阅读一本好书、欣赏音乐、散步大自然，或者任何你喜欢的活动，找到一种方式来宠爱自己吧！</string>
+	<!--sadness_(-100)_(-80)-->
+	<string name="tip_(-100)_(-80)_sadness_1">主人，在最艰难的时刻，不要害怕寻求帮助。与专业的心理健康专家交谈可以更好地帮助我们走出悲伤哦！</string>
+	<string name="tip_(-100)_(-80)_sadness_2">主人，请尝试与大自然亲近，户外散步、观赏风景，自然界的美丽可能有助于提升心情和缓解悲伤情绪哦！</string>
+	<string name="tip_(-100)_(-80)_sadness_3">主人，去参加社交活动，与朋友和亲人互动，分享快乐时光吧，这有助于减轻悲伤情绪并提升心情。不要独自面对哦！</string>
+	<!--disgust_(-80)_(-10)-->
+	<string name="tip_(-80)_(-10)_disgust_1">主人，寻找一些积极的改变和新的经历，这可以帮助您摆脱不快感，重新焕发活力哦！</string>
+	<string name="tip_(-80)_(-10)_disgust_2">主人，要学会接受和放松哦，不要过分固执于负面情感。渐渐地放下，你会发现内心更加宁静哦！</string>
+	<string name="tip_(-80)_(-10)_disgust_3">主人，探索冥想和正念练习，这些方法可以帮助您处理和减轻不快感，让您拥有一个更加健康的心理状态！</string>
+	<!--disgust_(-100)_(-80)-->
+	<string name="tip_(-100)_(-80)_disgust_1">主人，在处理不快感时，请尝试寻求专业的心理健康支持。专业心理医生可以为您提供更有效的方法来应对和克服强烈的不快情感哦！</string>
+	<string name="tip_(-100)_(-80)_disgust_2">主人，请尝试积极的与自己进行自我对话哦，时刻提醒自己不快情感只是短暂的，并且你有能力逐渐克服它们。请一定要保持乐观的态度哦！</string>
+	<string name="tip_(-100)_(-80)_disgust_3">主人，请保持社交联系，与亲朋好友一起度过愉快时光吧，社交互动可以缓解不快情感并提升心情指数。越难受越不要孤立自己哦！</string>
+	<!--fear_(-80)_(-10)-->
+	<string name="tip_(-80)_(-10)_fear_1">主人，您要了解您的恐惧是正常的，不要试图回避或压抑它。尝试将您的恐惧情感逐渐暴露在一个安全的环境中，您肯定会有不一样的体验的！</string>
+	<string name="tip_(-80)_(-10)_fear_2">主人，学会放松和冷静，使用深呼吸、冥想或其他冷静的技巧，可以帮助你应对和减轻恐惧情感哦！</string>
+	<string name="tip_(-80)_(-10)_fear_3">主人，请记住定期锻炼身体，运动可以帮助释放身体内的愉悦荷尔蒙，减轻恐惧情感并提升情感状态哦！</string>
+	<!--fear_(-100)_(-80)-->
+	<string name="tip_(-100)_(-80)_fear_1">主人，如果您感到极度恐惧，不要犹豫去寻求专业心理健康支持哦。专业心理医生可以提供适当的治疗和支持，帮助你渐渐克服恐惧情感的！</string>
+	<string name="tip_(-100)_(-80)_fear_2">主人，逐渐暴露自己于恐惧情境，可以帮助你适应和克服恐惧。渐进式暴露是一种常见的治疗方法，可帮助您减轻恐惧情感哦！</string>
+	<string name="tip_(-100)_(-80)_fear_3">主人，请与亲朋好友分享您的感受，他们的支持和理解可以在您最需要的时候提供帮助，记住不要独自承受恐惧情感哦！</string>
+	<!--anger_(-80)_(-10)-->
+	<string name="tip_(-80)_(-10)_anger_1">主人，在愤怒的时刻，请尝试通过深呼吸来冷静下来哦。深呼吸有助于减轻情感激动，让您更好地处理问题哦！</string>
+	<string name="tip_(-80)_(-10)_anger_2">主人，请控制你的反应，避免立刻做出冲动的决定或行动。给自己一些时间来冷静思考，再做出决策哦！</string>
+	<string name="tip_(-80)_(-10)_anger_3">主人，与他人建立有效的沟通，坦诚地表达您的感受，同时聆听他们的观点。良好的沟通有助于解决冲突和减轻愤怒情感哦！</string>
+	<!--anger_(-100)_(-80)-->
+	<string name="tip_(-100)_(-80)_anger_1">主人，反思您的愤怒情感的根本原因，了解它们的来源，这可以帮助您更好地管理和减轻愤怒情感哦！</string>
+	<string name="tip_(-100)_(-80)_anger_2">主人，请尝试寻找愤怒情感的替代方式来表达您的感受，如写下您的感受或通过体育活动来释放能量哦！</string>
+	<string name="tip_(-100)_(-80)_anger_3">主人，特别愤怒无法控制的时候可以向专业心理医生咨询哦，专业支持可以帮助您更好地处理愤怒情感，学会更健康的情感表达和应对方式哦！</string>
 </resources>
