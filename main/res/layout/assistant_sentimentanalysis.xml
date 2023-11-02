@@ -18,6 +18,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="文本识别"
+            android:background="@drawable/trends_button"
+            style="@style/Statistics_normalFontStyle1"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="150dp"
             android:layout_marginRight="150dp"></Button>
 
@@ -26,6 +31,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="图像识别"
+            style="@style/Statistics_normalFontStyle1"
+            android:textColor="@color/white"
+            android:background="@drawable/trends_button"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="150dp"
             android:layout_marginRight="150dp"></Button>
 
@@ -34,6 +44,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="语音识别"
+            android:background="@drawable/trends_button"
+            style="@style/Statistics_normalFontStyle1"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="150dp"
             android:layout_marginRight="150dp"></Button>
 
@@ -42,6 +57,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="视频识别"
+            android:background="@drawable/trends_button"
+            style="@style/Statistics_normalFontStyle1"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="150dp"
             android:layout_marginRight="150dp"></Button>
 

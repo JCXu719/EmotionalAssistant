@@ -1,57 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/dailytipspage">
 
+    <!-- XXX -->
     <TextView
         android:id="@+id/statistics_dailytipspage_hint"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="今日小贴士"
-        android:textSize="28sp"
+        android:layout_marginTop="20dp"
+        style="@style/Statistics_TittlelFontStyle1"
+        android:textSize="50sp"
+        android:shadowColor="@color/pink_red"
+        android:textColor="@color/pink"
+        android:text="今 日 小 贴 士"></TextView>
+
+    <TextView
+        android:id="@+id/statistics_dailytipspage_todayemotionhint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日心情："
+        style="@style/Statistics_tittlelFontStyle1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="80dp"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/statistics_dailytipspage_hint"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"></TextView>
+
+    <TextView
+        android:id="@+id/statistics_dailytipspage_todayemotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/statistics_dailytipspage_todayemotionhint"
+        app:layout_constraintTop_toBottomOf="@+id/statistics_dailytipspage_hint"
+        android:text="待输入数据"
+        style="@style/Statistics_tittlelFontStyle1"
+        android:layout_marginTop="30dp"></TextView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toBottomOf="@+id/statistics_dailytipspage_todayemotionhint"
         android:layout_width="350dp"
         android:layout_height="400dp"
-        android:background="@color/green_blue"
+        android:background="@color/white_alpha"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/statistics_dailytipspage_hint">
+        android:layout_margin="65dp">
 
-        <TextView
-            android:id="@+id/statistics_dailytipspage_todayemotionhint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="今日心情："
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="30dp"></TextView>
 
-        <TextView
-            android:id="@+id/statistics_dailytipspage_todayemotion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/statistics_dailytipspage_todayemotionhint"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="待输入数据"
-            android:layout_marginTop="30dp"></TextView>
 
         <TextView
             android:id="@+id/statistics_dailytipspage_todaytip"
             android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@id/statistics_dailytipspage_todayemotionhint"
+            android:layout_height="350dp"
+            android:paddingTop="30dp"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:text="今天也要继续努力哦\n今天也要继续努力哦\n今天也要继续努力哦\n今天也要继续努力哦\n今天也要继续努力哦\n今天也要继续努力哦\n"
-            ></TextView>
+            android:text="今天很开心的来到合肥工业大学，校园环境优美、空气清新（自动换行）"
+            style="@style/Statistics_normalFontStyle1"></TextView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

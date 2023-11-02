@@ -10,8 +10,9 @@
         android:id="@+id/assistant_captureTalk_btn"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/ic_assistantbtns_shape"
         android:text="情感识别/对话"
+        style="@style/Statistics_normalFontStyle1"
+        android:background="@drawable/trends_button"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         ></Button>
@@ -20,8 +21,9 @@
         android:id="@+id/assistant_writingDiary_btn"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/ic_assistantbtns_shape"
         android:text="情感日记"
+        style="@style/Statistics_normalFontStyle1"
+        android:background="@drawable/trends_button"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         ></Button>
@@ -30,8 +32,9 @@
         android:id="@+id/assistant_switchScenes_btn"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/ic_assistantbtns_shape"
         android:text="切换场景"
+        style="@style/Statistics_normalFontStyle1"
+        android:background="@drawable/trends_button"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         ></Button>
@@ -40,8 +43,9 @@
         android:id="@+id/assistant_moreFunctions_btn"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/ic_assistantbtns_shape"
         android:text="更多功能"
+        style="@style/Statistics_normalFontStyle1"
+        android:background="@drawable/trends_button"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         ></Button>

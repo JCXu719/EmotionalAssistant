@@ -7,8 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.hfut.edu.emotionalassistant.R;
 
-import java.util.zip.Inflater;
-
 public class DailyTipsPage extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

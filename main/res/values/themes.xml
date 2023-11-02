@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.EmotionalAssistant" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.EmotionalAssistant" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -31,5 +31,34 @@
     </style>
 
 
+    <style name="Statistics_normalFontStyle1">
+        <item name="android:textColor">@color/black</item>      <!--字体颜色-->
+        <item name="android:textSize">20sp</item>          <!--字体大小-->
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_height">200dp</item>     <!--控件高度-->
+        <item name="android:layout_width">match_parent</item>  <!--控件宽度-->
 
+    </style>
+
+    <style name="Statistics_tittlelFontStyle1">
+        <item name="android:textColor">@color/black</item>      <!--字体颜色-->
+        <item name="android:textSize">25sp</item>          <!--字体大小-->
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">200dp</item>     <!--控件高度-->
+        <item name="android:layout_width">match_parent</item>  <!--控件宽度-->
+
+    </style>
+
+    <style name="Statistics_TittlelFontStyle1">
+        <item name="android:textColor">@color/green_darklight</item>      <!--字体颜色-->
+        <item name="android:textSize">30sp</item>          <!--字体大小-->
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">3.0</item>
+        <item name="android:shadowDx">10.0</item>
+        <item name="android:shadowDy">10.0</item>
+        <item name="android:layout_height">200dp</item>     <!--控件高度-->
+        <item name="android:layout_width">match_parent</item>  <!--控件宽度-->
+
+    </style>
 </resources>

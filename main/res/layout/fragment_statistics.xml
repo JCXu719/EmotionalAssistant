@@ -42,11 +42,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/Statistics_normalFontStyle1"
                     android:text="助手名称"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/Statistics_normalFontStyle1"
                     android:text="助手等级"></TextView>
             </LinearLayout>
 
@@ -77,15 +79,16 @@
                     android:layout_height="wrap_content"
                     android:gravity="top"
                     android:text="近日心情数据统计"
-                    android:layout_weight="1"
-                    ></TextView>
+                    android:textStyle="bold"
+                    android:layout_weight="1"></TextView>
 
                 <Button
                     android:id="@+id/statistics_emotionData_moreInfoBtn"
                     android:layout_width="55dp"
                     android:layout_height="30dp"
                     style="@style/Statistics_BtnStyle"
-                    android:text="more"></Button>
+                    android:text="more"
+                    android:background="@drawable/trends_button"></Button>
 
             </LinearLayout>
 
@@ -119,6 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="今日小贴士"
+                    android:textStyle="bold"
                     android:layout_weight="1"></TextView>
 
                 <Button
@@ -126,7 +130,8 @@
                     android:layout_width="55dp"
                     android:layout_height="30dp"
                     style="@style/Statistics_BtnStyle"
-                    android:text="more"></Button>
+                    android:text="more"
+                    android:background="@drawable/trends_button"></Button>
 
 
             </LinearLayout>
@@ -162,13 +167,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="情感日记"
-                    android:layout_weight="1"></TextView>
+                    android:layout_weight="1"
+                    style="@style/Statistics_normalFontStyle1"
+                    android:backgroundTint="@color/purple_200"></TextView>
 
                 <Button
                     android:id="@+id/statistics_emotionDiary_moreInfoBtn"
-                    android:layout_width="55dp"
-                    android:layout_height="30dp"
                     style="@style/Statistics_BtnStyle"
+                    android:layout_width="55dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/trends_button"
                     android:text="more"></Button>
 
             </LinearLayout>

@@ -20,6 +20,9 @@
         app:layout_constraintTop_toBottomOf="@id/assistant_moreFunctions_et"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/trends_button"
+        style="@style/Statistics_normalFontStyle1"
+        android:textColor="@color/white"
         android:text="识别"></Button>
 
     <TextView

@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@drawable/emotiondiary_edit">
+
+
     <TextView
         android:id="@+id/statistics_emotionDiary_editDiary_editHint"
         app:layout_constraintTop_toTopOf="parent"
@@ -12,9 +14,9 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="@color/green_blue"
-        android:textSize="28sp"
         android:layout_marginTop="40dp"
-        android:text="记录你的每日心情！"></TextView>
+        android:text="记录你的每日心情！"
+        style="@style/Statistics_TittlelFontStyle1"></TextView>
 
     <LinearLayout
         android:id="@+id/statistics_emotionDiary_editDiary_basicInfoLinearLayout"
@@ -29,35 +31,39 @@
 
         <EditText
             android:id="@+id/statistics_emotionDiary_editDiary_etDate"
-            android:layout_width="100dp"
-            android:layout_height="48dp"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
             android:hint="Date"
-            android:gravity="center"></EditText>
+            style="@style/Statistics_normalFontStyle1"></EditText>
 
         <EditText
             android:id="@+id/statistics_emotionDiary_editDiary_etWeather"
             android:layout_width="100dp"
             android:layout_height="48dp"
+            android:gravity="center"
             android:hint="Weather"
-            android:gravity="center"></EditText>
+            style="@style/Statistics_normalFontStyle1"></EditText>
 
         <EditText
             android:id="@+id/statistics_emotionDiary_editDiary_etEmotion"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:hint="Emotion"
-            android:layout_weight="1"
             android:layout_marginLeft="40dp"
-            android:gravity="center"></EditText>
+            android:gravity="center"
+            style="@style/Statistics_normalFontStyle1"></EditText>
 
     </LinearLayout>
 
     <EditText
         app:layout_constraintTop_toBottomOf="@id/statistics_emotionDiary_editDiary_basicInfoLinearLayout"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:id="@+id/statistics_emotionDiary_editDiary_etContent"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:hint=" Edit the content here..."
+        style="@style/Statistics_normalFontStyle1"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:inputType="textMultiLine"
@@ -75,7 +81,11 @@
         android:layout_marginLeft="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="清空"></Button>
+        android:background="@drawable/trends_button"
+        android:text="清空"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"></Button>
 
     <Button
         android:id="@+id/statistics_emotionDiary_editDiary_submitBtn"
@@ -84,7 +94,11 @@
         android:layout_marginRight="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="提交"></Button>
+        android:background="@drawable/trends_button"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"></Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

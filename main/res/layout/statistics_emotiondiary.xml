@@ -56,7 +56,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:text="11111111111111111\n1111111111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n111111111111\n"
-        ></TextView>
+        style="@style/Statistics_normalFontStyle1"></TextView>
 
     <ImageView
         android:id="@+id/statistics_emotionDiary_ivStars"
